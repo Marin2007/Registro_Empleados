@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de Empleados</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <div class="container">
+    <h1>Registro de Empleados</h1>
+    <form id="employeeForm">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" placeholder="Ingrese el nombre" required>
+      
+      <label for="apellido">Apellido:</label>
+      <input type="text" id="apellido" placeholder="Ingrese el apellido" required>
+      
+      <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+      <input type="date" id="fechaNacimiento" required>
+      
+      <label for="cargo">Cargo:</label>
+      <input type="text" id="cargo" placeholder="Ingrese el cargo" required>
+
+      <button type="button" onclick="agregarEmpleado()">Agregar Empleado</button>
+      <button type="button" onclick="listarEmpleados()">Listar Empleados</button>
+    </form>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
